@@ -141,13 +141,14 @@ odoo.define("theme_kaizen.frontend", function(require) {
     });
 
     // Hide / reveal menu
-    var container = document.getElementById("wrapwrap");
-    var body = document.body;
     var lastScroll = 0;
 
     window.addEventListener("scroll", function() {
         var currentScroll = window.pageYOffset;
-        if (currentScroll <= 0) {
+        var container = document.getElementById("wrapwrap");
+        var body = document.body;
+
+        if (currentScroll <= 0 && container) {
             container.classList.remove("scroll-up");
             body.classList.remove("scroll-up");
             return;

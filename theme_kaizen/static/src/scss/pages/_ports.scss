@@ -7,22 +7,22 @@
     padding-bottom: 200px;
     overflow: hidden;
 
-    @media (max-width: 1199.98px) {
+    @media (max-width: breakpoint-max('lg')) {
         padding-bottom: 120px;
     }
 
-    @media (max-width: 991.98px) {
+    @media (max-width: breakpoint-max('md')) {
         padding-bottom: 35px;
     }
 
     .container {
         display: flex;
 
-        @media (min-width: 1300px) {
+        @media (min-width: $container-large) {
             max-width: $container-large;
         }
 
-        @media (max-width: 991.98px) {
+        @media (max-width: breakpoint-max('md')) {
             flex-direction: column;
         }
     }
@@ -36,7 +36,7 @@
             list-style-type: none;
         }
 
-        @media (max-width: 991.98px) {
+        @media (max-width: breakpoint-max('md')) {
             flex: 0;
         }
 
@@ -67,7 +67,7 @@
             }
 
             &::before {
-                @media (max-width: 991.98px) {
+                @media (max-width: breakpoint-max('md')) {
                     content: "";
                     position: absolute;
                     top: 0;
@@ -82,7 +82,7 @@
         }
 
         .collapse {
-            @media (min-width: 992px) {
+            @media (min-width: breakpoint-min($lg)) {
                 display: block;
             }
         }
@@ -115,7 +115,7 @@
                 font-size: 18px;
                 letter-spacing: 0.035em;
 
-                @media (max-width: 1199.98px) {
+                @media (max-width: breakpoint-max('lg')) {
                     font-size: 16px;
                     padding: 15px 15px 10px 15px;
                 }
@@ -132,7 +132,7 @@
                 z-index: -1;
                 transform: translateX(-25%);
 
-                @media (max-width: 991.98px) {
+                @media (max-width: breakpoint-max('md')) {
                     display: none;
                 }
             }
@@ -151,7 +151,7 @@
             margin-bottom: 60px;
             position: relative;
 
-            @media (max-width: 991.98px) {
+            @media (max-width: breakpoint-max('md')) {
                 margin: 0;
                 background-color: $off-white;
                 padding: 15px 0;
@@ -196,7 +196,7 @@
                     border-left: 5px solid $ubuntu-purple-dark;
                 }
 
-                @media (max-width: 991.98px) {
+                @media (max-width: breakpoint-max('md')) {
                     font-size: 14px;
                 }
             }
@@ -212,7 +212,7 @@
             background-color: $gray-light;
             z-index: -1;
 
-            @media (max-width: 991.98px) {
+            @media (max-width: breakpoint-max('md')) {
                 height: 100%;
                 width: 150%;
                 right: 50%;
@@ -228,7 +228,7 @@
         padding-left: 50px;
         padding-top: 100px;
 
-        @media (max-width: 991.98px) {
+        @media (max-width: breakpoint-max('md')) {
             padding-left: 0;
             padding-top: 25px;
             flex: 0;
@@ -244,7 +244,7 @@
         .title {
             padding-right: 45px;
 
-            @media (max-width: 991.98px) {
+            @media (max-width: breakpoint-max('md')) {
                 width: 100%;
                 padding-right: 0;
             }
@@ -254,7 +254,7 @@
                 align-items: flex-start;
                 justify-content: flex-start;
 
-                @media (max-width: 991.98px) {
+                @media (max-width: breakpoint-max('md')) {
                     justify-content: space-between;
                 }
             }
@@ -307,7 +307,7 @@
             margin-bottom: 0;
             color: black;
 
-            @media (max-width: 991.98px) {
+            @media (max-width: breakpoint-max('md')) {
                 width: 100%;
             }
         }
@@ -326,7 +326,7 @@
             border-top: 5px solid white;
             white-space: nowrap;
 
-            @media (max-width: 991.98px) {
+            @media (max-width: breakpoint-max('md')) {
                 padding: 1px 15px;
             }
         }
@@ -354,7 +354,7 @@
             background-color: #f3f3f3;
             z-index: -1;
 
-            @media (max-width: 991.98px) {
+            @media (max-width: breakpoint-max('md')) {
                 left: 50%;
                 transform: translateX(-50%);
             }
@@ -375,11 +375,11 @@
             grid-template-columns: repeat(3, 1fr);
             column-gap: 50px;
 
-            @media (max-width: 1299.98px) {
+            @media (max-width: $container-large - .02) {
                 column-gap: 10px;
             }
 
-            @media (max-width: 1199.98px) {
+            @media (max-width: breakpoint-max('lg')) {
                 grid-template-columns: 1fr;
                 row-gap: 15px;
             }
@@ -393,7 +393,7 @@
     .no-installer {
         margin-bottom: 60px;
 
-        @media (max-width: 991.98px) {
+        @media (max-width: breakpoint-max('md')) {
             margin-bottom: 30px;
         }
     }
@@ -407,7 +407,7 @@
             margin-bottom: 25px;
         }
 
-        @media (max-width: 991.98px) {
+        @media (max-width: breakpoint-max('md')) {
             display: flex;
             flex-direction: column-reverse;
         }
@@ -436,11 +436,11 @@
         p {
             margin-left: 20px;
 
-            @media (max-width: 1199.98px) {
+            @media (max-width: breakpoint-max('lg')) {
                 margin-left: 10px;
             }
 
-            @media (max-width: 575.98px) {
+            @media (max-width: breakpoint-max('sm')) {
                 font-size: 12px;
             }
         }
@@ -466,7 +466,7 @@
             margin-right: 12px;
         }
 
-        @media (max-width: 991.98px) {
+        @media (max-width: breakpoint-max('md')) {
             margin-bottom: 30px;
         }
     }
@@ -484,7 +484,7 @@
             right: 0;
             width: 30%;
 
-            @media (max-width: 991.98px) {
+            @media (max-width: breakpoint-max('md')) {
                 width: auto;
                 height: 80%;
             }
@@ -494,15 +494,15 @@
             margin-bottom: 10px;
         }
 
-        @media (max-width: 1299.98px) {
+        @media (max-width: $container-large - .02) {
             padding: 60px 60px 60px 40px;
         }
 
-        @media (max-width: 1199.98px) {
+        @media (max-width: breakpoint-max('lg')) {
             padding: 40px 40px 40px 30px;
         }
 
-        @media (max-width: 991.98px) {
+        @media (max-width: breakpoint-max('md')) {
             margin-top: 35px;
             padding: 60px 80px 60px 40px;
         }

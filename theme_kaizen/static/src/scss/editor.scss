@@ -2,7 +2,7 @@
     header#top {
         top: 46px !important;
         .navbar {
-            @media (max-width: map-get($grid-breakpoints, "lg")) {
+            @media (max-width: breakpoint-max('md')) {
                 top: 46px;
             }
         }

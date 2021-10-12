@@ -5,11 +5,11 @@
 .home-hero {
     padding: 90px 0 150px 0;
 
-    @media (max-width: 1299.98px) {
+    @media (max-width: $container-large - .02) {
         padding: 70px 0 100px 0;
     }
 
-    @media (max-width: 991.98px) {
+    @media (max-width: breakpoint-max('lg')) {
         padding: 50px 0 140px 0;
     }
 
@@ -17,11 +17,11 @@
         display: flex;
         align-items: center;
 
-        @media (min-width: 1300px) {
+        @media (min-width: $container-large) {
             max-width: $container-large;
         }
 
-        @media (max-width: 991.98px) {
+        @media (max-width: breakpoint-max('lg')) {
             flex-direction: column-reverse;
         }
     }
@@ -30,7 +30,7 @@
         flex: 0 0 50%;
         padding-right: 25px;
 
-        @media (max-width: 991.98px) {
+        @media (max-width: breakpoint-max('lg')) {
             padding-right: 0;
         }
 
@@ -44,7 +44,7 @@
             line-height: 1.3;
             margin-bottom: 45px;
 
-            @media (max-width: 1199.98px) {
+            @media (max-width: breakpoint-max('lg')) {
                 margin-bottom: 30px;
             }
         }
@@ -52,7 +52,7 @@
         button {
             margin-bottom: 80px;
 
-            @media (max-width: 1199.98px) {
+            @media (max-width: breakpoint-max('lg')) {
                 margin-bottom: 50px;
             }
         }
@@ -64,7 +64,7 @@
             max-width: 450px;
 
             .h4 {
-                @media (max-width: 575.98px) {
+                @media (max-width: breakpoint-max('xs')) {
                     font-size: 14px;
                 }
             }
@@ -82,7 +82,7 @@
             width: 100%;
         }
 
-        @media (max-width: 991.98px) {
+        @media (max-width: breakpoint-max('lg')) {
             margin-bottom: 50px;
         }
     }
@@ -94,7 +94,7 @@
     color: white;
     overflow: hidden;
 
-    @media (max-width: 991.98px) {
+    @media (max-width: breakpoint-max('lg')) {
         background-color: white;
         color: black;
     }
@@ -104,11 +104,11 @@
         align-items: center;
         justify-content: space-between;
 
-        @media (min-width: 1300px) {
+        @media (min-width: $container-large) {
             max-width: $container-large;
         }
 
-        @media (max-width: 991.98px) {
+        @media (max-width: breakpoint-max('lg')) {
             flex-direction: column;
         }
     }
@@ -116,7 +116,7 @@
     &__text {
         flex: 0 0 15%;
 
-        @media (max-width: 991.98px) {
+        @media (max-width: breakpoint-max('lg')) {
             flex: 0;
             margin-bottom: 25px;
         }
@@ -129,13 +129,13 @@
         grid-template-columns: repeat(5, 1fr);
         padding-top: 60px;
 
-        @media (max-width: 991.98px) {
+        @media (max-width: breakpoint-max('lg')) {
             flex: 0;
             width: 100%;
             padding-top: 40px;
         }
 
-        @media (max-width: 767.98px) {
+        @media (max-width: breakpoint-max('sm')) {
             padding-top: 30px;
         }
 
@@ -148,11 +148,11 @@
             p {
                 margin-bottom: 10px;
 
-                @media (max-width: 575.98px) {
+                @media (max-width: breakpoint-max('xs')) {
                     font-size: 12px;
                 }
 
-                @media (max-width: 370.98px) {
+                @media (max-width: breakpoint-min('xs')) {
                     font-size: 10px;
                 }
             }
@@ -161,19 +161,19 @@
                 transform: translateY(-15px);
             }
 
-            @media (max-width: 1199.98px) {
+            @media (max-width: breakpoint-max('lg')) {
                 margin-bottom: -180px;
             }
 
-            @media (max-width: 991.98px) {
+            @media (max-width: breakpoint-max('lg')) {
                 margin-bottom: -150px;
             }
 
-            @media (max-width: 767.98px) {
+            @media (max-width: breakpoint-max('sm')) {
                 margin-bottom: -120px;
             }
 
-            @media (max-width: 575.98px) {
+            @media (max-width: breakpoint-max('xs')) {
                 margin-bottom: -80px;
             }
         }
@@ -217,7 +217,7 @@
             z-index: 0;
             transform: translateX(-25%);
 
-            @media (max-width: 991.98px) {
+            @media (max-width: breakpoint-max('lg')) {
                 content: "";
             }
         }
@@ -229,18 +229,18 @@
     padding: 50px 0 80px 0;
     overflow: hidden;
 
-    @media (max-width: 991.98px) {
+    @media (max-width: breakpoint-max('lg')) {
         padding: 50px 0;
     }
 
     h2 {
-        @media (max-width: 991.98px) {
+        @media (max-width: breakpoint-max('lg')) {
             text-align: center;
         }
     }
 
     .container {
-        @media (min-width: 1300px) {
+        @media (min-width: $container-large) {
             max-width: $container-large;
         }
     }
@@ -289,7 +289,7 @@
         background-image: linear-gradient(225deg, $ubuntu-orange, $ubuntu-purple-light);
         border-radius: 3px;
 
-        @media (max-width: 991.98px) {
+        @media (max-width: breakpoint-max('lg')) {
             width: 110px;
         }
     }
@@ -299,7 +299,7 @@
 .home-media {
     padding: 90px 0;
 
-    @media (max-width: 991.98px) {
+    @media (max-width: breakpoint-max('lg')) {
         padding: 50px 0;
     }
 
@@ -307,11 +307,11 @@
         display: flex;
         align-items: center;
 
-        @media (min-width: 1300px) {
+        @media (min-width: $container-large) {
             max-width: $container-large;
         }
 
-        @media (max-width: 991.98px) {
+        @media (max-width: breakpoint-max('lg')) {
             flex-direction: column-reverse;
         }
     }
@@ -320,7 +320,7 @@
         .container {
             flex-direction: row-reverse;
 
-            @media (max-width: 991.98px) {
+            @media (max-width: breakpoint-max('lg')) {
                 flex-direction: column-reverse;
             }
         }
@@ -329,7 +329,7 @@
             padding-right: 0;
             padding-left: 70px;
 
-            @media (max-width: 991.98px) {
+            @media (max-width: breakpoint-max('lg')) {
                 padding: 0;
             }
         }
@@ -339,7 +339,7 @@
         flex: 0 0 50%;
         padding-right: 70px;
 
-        @media (max-width: 991.98px) {
+        @media (max-width: breakpoint-max('lg')) {
             padding: 0;
             margin-top: 70px;
         }
@@ -358,15 +358,15 @@
             font-size: 28px;
             line-height: 1.4;
 
-            @media (max-width: 1299.98px) {
+            @media (max-width: $container-large - .02) {
                 font-size: 24px;
             }
 
-            @media (max-width: 1199.98px) {
+            @media (max-width: breakpoint-max('lg')) {
                 font-size: 20px;
             }
 
-            @media (max-width: 575.98px) {
+            @media (max-width: breakpoint-max('xs')) {
                 font-size: 16px;
             }
         }
@@ -386,7 +386,7 @@
     text-align: center;
     padding: 140px 0 100px 0;
 
-    @media (max-width: 991.98px) {
+    @media (max-width: breakpoint-max('lg')) {
         padding: 10px 0;
         text-align: left;
     }
@@ -394,7 +394,7 @@
     h2 {
         margin-bottom: 30px;
 
-        @media (max-width: 991.98px) {
+        @media (max-width: breakpoint-max('lg')) {
             margin-bottom: 20px;
         }
     }
@@ -404,11 +404,11 @@
         max-width: 830px;
         margin: 0 auto;
 
-        @media (max-width: 991.98px) {
+        @media (max-width: breakpoint-max('lg')) {
             font-size: 20px;
         }
 
-        @media (max-width: 575.98px) {
+        @media (max-width: breakpoint-max('xs')) {
             font-size: 16px;
         }
     }
@@ -422,16 +422,16 @@
 .home-posts {
     padding: 100px 0 90px 0;
 
-    @media (max-width: 991.98px) {
+    @media (max-width: breakpoint-max('lg')) {
         padding: 50px 0;
     }
 
     .container {
-        @media (min-width: 1300px) {
+        @media (min-width: $container-large) {
             max-width: $container-large;
         }
 
-        @media (max-width: 575.98px) {
+        @media (max-width: breakpoint-max('xs')) {
             padding-right: 0;
         }
     }

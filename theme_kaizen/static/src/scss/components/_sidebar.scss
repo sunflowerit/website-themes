@@ -2,20 +2,20 @@
 .page-content--sidebar {
     padding: 80px 0 50px 0;
 
-    @media (max-width: 1199.98px) {
+    @media (max-width: breakpoint-max('lg')) {
         padding: 50px 0;
     }
 
-    @media (max-width: 991.98px) {
+    @media (max-width: breakpoint-max('md')) {
         padding: 30px 0;
     }
 
     .container {
-        @media (min-width: 1300px) {
+        @media (min-width: $container-large) {
             max-width: $container-large;
         }
 
-        @media (max-width: 991.98px) {
+        @media (max-width: breakpoint-max('md')) {
             flex-direction: column-reverse;
         }
     }
@@ -23,11 +23,11 @@
     .content {
         padding-right: 100px;
 
-        @media (max-width: 1299.98px) {
+        @media (max-width: $container-large - .02) {
             padding-right: 60px;
         }
 
-        @media (max-width: 991.98px) {
+        @media (max-width: breakpoint-max('md')) {
             padding-right: 0;
         }
     }
@@ -38,7 +38,7 @@
         flex: 0 0 30%;
 
         .collapse {
-            @media (min-width: 992px) {
+            @media (min-width: breakpoint-min($lg)) {
                 display: block !important;
             }
         }
@@ -53,7 +53,7 @@
                 margin-top: 15px;
             }
 
-            @media (max-width: 991.98px) {
+            @media (max-width: breakpoint-max('md')) {
                 margin-top: 10px;
             }
         }
@@ -92,7 +92,7 @@
                 text-decoration: underline;
             }
 
-            @media (max-width: 991.98px) {
+            @media (max-width: breakpoint-max('md')) {
                 margin-bottom: 25px;
             }
         }
@@ -105,7 +105,7 @@
             padding: 15px 0;
         }
 
-        @media (max-width: 991.98px) {
+        @media (max-width: breakpoint-max('md')) {
             position: relative;
             top: 0;
             width: 100%;

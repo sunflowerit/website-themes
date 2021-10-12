@@ -32,7 +32,7 @@ html {
     }
 }
 
-@media (max-width: map-get($grid-breakpoints, "lg")) {
+@media (max-width: breakpoint-max('md')) {
     #wrapwrap {
         /* Height of the fixed header */
         padding-top: 90px;
